@@ -1,4 +1,5 @@
 import { BlogPosts } from 'app/components/posts'
+import { Envelope } from "@mynaui/icons-react";
 
 export default function Page() {
   return (
@@ -13,6 +14,13 @@ export default function Page() {
       <div className="my-8">
         <BlogPosts />
       </div>
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold mb-2">Contact</h2>
+          <div className="flex items-center gap-2">
+            <Envelope className="w-5 h-5 text-neutral-600 dark:text-neutral-400" />
+            <span>shiroenguyenlehoang@gmail.com</span>
+          </div>
+        </section>
     </section>
   )
 }
